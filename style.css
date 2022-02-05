@@ -68,10 +68,10 @@ p{
   text-emphasis-style: bold;
   margin-bottom: 10px;
 }
-.screening-header{
+.section-header{
   font-weight:bold;
 }
-.screening-footer{
+.section-footer{
   margin-bottom: 30px;
 }
 label {
@@ -156,7 +156,7 @@ input {
 
 /* Form */
 .form {
-  width: clamp(320px, 30%, 430px);
+  width: clamp(500px, 30%, 430px);
   margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 0.35rem;
@@ -232,18 +232,17 @@ input {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #ccc !important;
+  width: 50%;
 }
 .rounded-3 {
   border-radius: 0.3rem !important;
 }
 .center-img{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  padding: 1.5rem;
+  width: 75%;
 }
-
 
 
 
