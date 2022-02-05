@@ -12,16 +12,14 @@
 body {
   font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  /* display: inline-flex; */
-
 
 }
 center{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  margin: auto;
+  max-width: min-content;
+  display: inline-block;
 }
+
 .indeedlogo {
   padding-left: 0.3rem;
   padding-right: 1rem;
@@ -209,23 +207,14 @@ input {
 .btn:hover {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
 }
-.column {
-  float: left;
-}
 
-.left {
-  width: 40%;
-}
-
-.right {
-  width: 30%;
-}
 /* this is css imported to create the two separate columns w/ image and wizard */
 .d-grid {
   display: grid !important;
+  margin: auto;
 }
 .gap-3 {
-  gap: 1rem !important;
+  gap: 5rem !important;
 }
 .bg-light {
   --bs-bg-opacity: 1;
@@ -243,7 +232,11 @@ input {
   padding: 1.5rem;
   width: 75%;
 }
-
+.center-review-img{
+  display: block;
+  padding: 1rem;
+  max-width: 28.5rem;
+}
 
 
 
