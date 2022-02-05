@@ -7,23 +7,28 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="script.js" defer></script>
-    <title>Registraion Form</title>
+    <title>Indeed.com</title>
   </head>
-  
-  <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
+  <header>
+    
+    <div class="topnav">
+        <div><img class="indeedlogo" src="Indeed-logo.png"></div>
+        <a class="active" href="findjobs">Find Jobs</a>
+        <a href="#companyreviews">Company Reviews</a>
+        <a href="#findsaleries">Find Saleries</a>
+    </div>
+</header>
   
   <body>
+      <div class="space">
+
+      </div>
     <div class="center">
         <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr;">
             <div class="bg-light" >
                 
                 <form action="#" class="form">
-                    <h1 class="text-center">Registration Form</h1>
+                    <h1 class="text-center">3D Artist Application</h1>
                     <!-- Progress bar -->
                     <div class="progressbar">
                     <div class="progress" id="progress"></div>
@@ -33,10 +38,12 @@
                         data-title="Contact"
                     ></div>
                     <div class="progress-step" data-title="Resume"></div>
-                    <div class="progress-step" data-title="Cover letter"></div>
+                    <div class="progress-step" data-title="Cover Letter"></div>
+                    <div class="progress-step" data-title="Screening Questions"></div>
+                    <div class="progress-step" data-title="Quiz"></div>
                     <div class="progress-step" data-title="Review"></div>
                     </div>
-            
+
                     <!-- Steps -->
                     <div class="form-step form-step-active">
                     <div class="input-group">
@@ -93,6 +100,40 @@
                     </div>
                     </div>
                     <div class="form-step">
+                        <p class="screening-header">Screening Questions</p>
+                        <div class="input-group">
+                            <label for="dob">Please list 2-3 dates and time ranges you could do an interview</label>
+                            <input type="text" name="text" id="dob" />
+                        </div>
+                        <div class="input-group">
+                            <label for="ID">What is the difference between UX and UI design?</label>
+                            <input type="text" name="text" id="ID" />
+                        </div>
+                        <div class="input-group">
+                            <label for="ID">What is the highest level of education you have completed?</label>
+                            <input type="text" name="text" id="ID" />
+                        </div>
+                        <p class="screening-footer">These questions are employer written questions, you can report inapproriate questions to Indeed</p>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Previous</a>
+                            <a href="#" class="btn btn-next">Next</a>
+                        </div>
+                        </div>
+                        <div class="form-step">
+                            <div class="input-group">
+                                <label for="dob">Date of Birth</label>
+                                <input type="text" name="dob" id="dob" />
+                            </div>
+                            <div class="input-group">
+                                <label for="ID">National ID</label>
+                                <input type="number" name="ID" id="ID" />
+                            </div>
+                            <div class="btns-group">
+                                <a href="#" class="btn btn-prev">Previous</a>
+                                <a href="#" class="btn btn-next">Next</a>
+                            </div>
+                            </div>
+                    <div class="form-step">
                     <div class="input-group">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" />
@@ -115,7 +156,7 @@
             </div>
 
             <div class="bg-light border rounded-3" >
-                <img class="center-img" src="Images/jobdescrip.png" alt="">
+                <img class="center-img" src="jobdescrip.png" alt="">
             </div>
 
             <!-- This last div is for the row function -->
