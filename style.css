@@ -14,6 +14,7 @@ body {
   margin: 0;
 
 }
+
 center{
   margin: auto;
   max-width: min-content;
@@ -208,6 +209,12 @@ input {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
 }
 
+.btn-next{
+  background-color: var(--primary-color);
+  color:#f3f3f3;
+  
+}
+
 /* this is css imported to create the two separate columns w/ image and wizard */
 .d-grid {
   display: grid !important;
@@ -222,7 +229,9 @@ input {
 }
 .border {
   border: 1px solid #ccc !important;
-  width: 50%;
+  position: fixed;
+  margin-left: 35rem;
+  max-width: 28rem;
 }
 .rounded-3 {
   border-radius: 0.3rem !important;
@@ -230,7 +239,7 @@ input {
 .center-img{
   display: block;
   padding: 1.5rem;
-  width: 75%;
+  max-width: 20rem;
 }
 .center-review-img{
   display: block;
@@ -238,6 +247,20 @@ input {
   max-width: 28.5rem;
 }
 
+.uploadresume{
+  max-width: 25rem;
+  
+}
 
+.createresume{
+  max-width: 27rem;
+}
 
+.uploadcoverletter{
+  max-width: 27rem;
+}
+
+.createcoverletter{
+  max-width: 27rem;
+}
 
