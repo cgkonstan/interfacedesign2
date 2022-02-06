@@ -35,8 +35,8 @@ center{
   /* Add a black background color to the top navigation */
 .topnav {
   background-color: rgb(255, 255, 255);
-  /* overflow: hidden;
-  display: inline-block; */
+  overflow: hidden;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -227,19 +227,12 @@ input {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
-.border {
-  border: 1px solid #ccc !important;
-  position: fixed;
-  margin-left: 35rem;
-  max-width: 28rem;
-}
-.rounded-3 {
-  border-radius: 0.3rem !important;
-}
 .center-img{
   display: block;
-  padding: 1.5rem;
-  max-width: 20rem;
+  margin-left: 2rem;
+  position: sticky;
+  top: 0;
+  
 }
 .center-review-img{
   display: block;
@@ -249,18 +242,22 @@ input {
 
 .uploadresume{
   max-width: 25rem;
-  
+  margin-left: 1.2rem;
+  cursor: pointer;
 }
 
 .createresume{
   max-width: 27rem;
+  cursor: pointer;
 }
 
 .uploadcoverletter{
   max-width: 27rem;
+  cursor: pointer;
 }
 
 .createcoverletter{
   max-width: 27rem;
+  cursor: pointer;
 }
 
