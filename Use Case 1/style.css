@@ -207,8 +207,10 @@ input {
 /* Job Description */
 
 .description {
-  max-width: 500px;
-  margin-left: 5rem;
+  width: clamp(500px, 30%, 430px);
+  margin-left: 700px;
+  border-radius: 0.35rem;
+  position: fixed;
 }
 
 
@@ -255,7 +257,7 @@ input {
   display: grid !important;
   margin: auto;
   gap: 5rem !important;
-  float: right;
+  float: center;
 }
 /* this is css imported to create the two separate columns w/ image and wizard */
 .gap-3 {
@@ -294,4 +296,3 @@ input {
   max-width: 27rem;
   cursor: pointer;
 }
-
