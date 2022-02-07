@@ -1,11 +1,11 @@
-// Variables
+// Setting up constants
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
 const progress = document.getElementById("progress");
 const formSteps = document.querySelectorAll(".form-step");
 const progressSteps = document.querySelectorAll(".progress-step");
 
-// Set Up
+// Set up variables
 let formStepsNum = 0;
 
 // Next Buttons
@@ -45,9 +45,10 @@ function updateProgressbar() {
       progressStep.classList.remove("progress-step-active");
     }
   });
-// Progress Bar Update
-  const progressActive = document.querySelectorAll(".progress-step-active");
 
+// Progress Bar Update calling the active step (saves spot)
+  const progressActive = document.querySelectorAll(".progress-step-active");
+//Calculate total number of steps (Easier for when adding in HTML)
   progress.style.width =
     ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
 }
