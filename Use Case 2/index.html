@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Document Properties -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+    <title>Indeed.com</title>
+  </head>
+  <!-- Nav Bar Links -->
+  <header>
+    <div class="topnav">
+        <div><a href="https://www.indeed.com/"><img class="indeedlogo" src="images/Indeed-logo.png"></a></div>
+        <a class="active" href="findjobs">Find Jobs</a>
+        <a href="#companyreviews">Company Reviews</a>
+        <a href="#findsaleries">Find Saleries</a>
+    </div>
+</header>
+  <!-- Space Between Nav Bar and Content -->
+  <body>
+      <div class="space">
+
+      </div>
+      <!-- Two Content Block Grids -->
+    <div class="center" style="margin-left: 28rem">
+        <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr;">
+            <div>
+                
+                <form action="#" class="form">
+                    <h1 class="text-center">UX Researcher Application</h1>
+                    <!-- Progress bar -->
+                    <div class="progressbar">
+                    <div class="progress" id="progress"></div>
+                    
+                    <div
+                        class="progress-step progress-step-active"
+                        data-title="Contact"
+                    ></div>
+                    <div class="progress-step" data-title="Resume"></div>
+                    <div class="progress-step" data-title="Cover Letter"></div>
+                    <div class="progress-step" data-title="Screening"></div>
+                    <div class="progress-step" data-title="Quiz"></div>
+                    <div class="progress-step" data-title="Review"></div>
+                    </div>
+
+                    <!-- Steps -->
+                    <!-- Contact Info -->
+                    <div class="form-step form-step-active">
+                    <div class="input-group">
+                        <p class="section-header">Contact</p>
+                        <label for="username">First Name</label>
+                        <input type="text" name="username" id="username" />
+                    </div>
+                    <div class="input-group">
+                        <label for="position">Last name</label>
+                        <input type="text" name="position" id="position" />
+                    </div>
+                    <div class="input-group">
+                        <label for="username">Phone Number</label>
+                        <input type="text" name="username" id="username" />
+                        </div>
+                        <div class="input-group">
+                        <label for="position">Email</label>
+                        <input type="text" name="position" id="position" />
+                        </div>
+                        <div class="input-group">
+                        <label for="position">Location</label>
+                        <input type="text" name="position" id="position" />
+                        </div>
+                    <div class="">
+                        <a href="#" class="btn btn-next width-50 ml-auto">Continue to resume</a>
+                        <a href="./subpages/cancel.html" class="btn-cancel">Cancel</a>
+                    </div>
+                <!-- Upload a Resume Step   -->
+                </div>
+                    <div class="form-step">
+                    <div class="input-group">
+                        <p class="section-header">Resume</p>
+                        <div><img style="margin-right:-20rem;" class="uploadresume" src="./images/UploadResume2.png"></div>
+                        <div><img style="margin-right:-20em;" class="createresume" src="./images/CreateResume2.png"></div>  
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <a href="#" class="btn btn-next">Continue to cover letter</a>
+                        <a href="./subpages/cancel.html" class="btn-cancel">Cancel</a>
+                    </div>
+                    <!-- Upload a Cover Letter -->
+                    </div>
+                    <div class="form-step">
+                    <div class="input-group">
+                        <p class="section-header">Coverletter</p>
+                        <div><img style="margin-right:-20rem;" class="uploadcoverletter" src="./images/Uploadcoverletter.png"></div> 
+                        <div><img style="margin-right:-20em;" class="createcoverletter" src="./images/CreateCoverletter.png"></div>
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <a href="#" class="btn btn-next">Continue to screening</a>
+                        <a href="./subpages/cancel.html" class="btn-cancel">Cancel</a>
+                    </div>
+                    <!-- Screening Questions -->
+                    </div>
+                    <div class="form-step">
+                        <p class="section-header">Screening Questions</p>
+                        <div class="input-group">
+                            <label for="dob">Please list 2-3 dates and time ranges you could do an interview</label>
+                            <input type="text" name="text" id="text" />
+                        </div>
+                        <div class="input-group">
+                            <label for="ID">What is the difference between UX and UI design?</label>
+                            <input type="text" name="text" id="text" />
+                        </div>
+                        <div class="input-group">
+                            <label for="ID">What is the highest level of education you have completed?</label>
+                            <input type="text" name="text" id="text" />
+                        </div>
+                        <p class="section-footer">These questions are employer written questions, you can report inapproriate questions to Indeed</p>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Previous</a>
+                            <a href="#" class="btn btn-next">Continue to quiz</a>
+                            <a href="./subpages/cancel.html" class="btn-cancel">Cancel</a>
+                        </div>
+                        </div>
+                        <!-- Quiz -->
+                        <div class="form-step">
+                            <p class="section-header">Quiz</p>
+                            <div class="input-group">
+                                <label for="dob">How would you make a product accessible for users with disabilities?</label>
+                                <input type="text" name="text" id="text" />
+                            </div>
+                            <div class="input-group">
+                                <label for="ID">What do you think will be the next big thing in UX design?</label>
+                                <input type="text" name="text" id="text" />
+                            </div>
+                            <p class="section-footer">These questions are employer written questions, you can report inapproriate questions to Indeed</p>
+                            <div class="btns-group">
+                                <a href="#" class="btn btn-prev">Previous</a>
+                                <a href="#" class="btn btn-next">Continue to review</a>
+                                <a href="./subpages/cancel.html" class="btn-cancel">Cancel</a>
+                            </div>
+                            </div>
+                            <!-- Review -->
+                    <div class="form-step"> 
+                    <div class="input-group">
+                        <p class="section-header">Review</p>
+                        <img style="margin-right:-20rem;" class="center-review-img" src="./images/Job name.png" alt="">
+                        <img style="margin-right:-20em;" class="center-review-img" src="./images/Name Email Phone.png" alt="">
+                        <img style="margin-right:-20em;" class="center-review-img" src="./images/Resume.png" alt="">
+                        <img style="margin-right:-20em;" class="center-review-img" src="./images/Cover letter.png" alt="">
+                        <img style="margin-right:-20em;" class="center-review-img" src="./images/Screening questions.png" alt="">
+                        <img style="margin-right:-20em;" class="center-review-img" src="./images/Quiz.png" alt="">
+                    </div>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <a href="./subpages/continue.html" class="btn btn-next">Submit</a>
+                        <a href="./subpages/cancel.html" class="btn-cancel">Cancel</a>
+                    </div>
+                    </div>
+                </form>
+               <!-- Space Between Content and Bottom of Page -->
+                <div class="space"></div>
+                
+            </div>
+            <!-- Job Description Text -->
+            <div class="description" >
+                <br>
+                <h1 class="text-center">Job Description</h1>
+                <br>
+                <br>
+                <p style= "text-align:left" class="section-header">Our Mission:</p>
+                <p style= "text-align:left" class="section-footer">V4EX.Inc has 160 years of history providing financial security to millions of people. Continuing that tradition means changing to meet the needs of our clients and financial advisors. We are a strong, innovative, and growing company that invests in people who care and make a positive impact. The Product Design team leads the way by creating human, simple, and engaging products to help people plan, track, and protect their financial goals.</p>
+                <p style= "text-align:left" class="section-header">What's the role:</p>
+                <p style= "text-align:left" class="section-footer">User Experience Researchers on our Design team inform, shape, evaluate, and monitor the user experiences delivered to consumers, the field, and home office employees through a variety of qualitative and quantitative research techniques. They work collaboratively with leaders, designers, and other partners to support user-centered, data-driven decision-making throughout the product development lifecycle.</p>
+                <p style= "text-align:left" class="section-header">Responsibilities:</p>
+                <p style= "text-align:left" class="section-footer"> You will need to plan and execute qualitative and quantitative user research, communicate research findings and insights to partners and advocate for the end-user in both tactical and strategic experience design decision-making, and collaborate with product, design, and development teams to raise awareness of user needs, problems, and behaviorsand understand stakeholders research needs and identify the right research methodologies to address them.</p>
+            </div>
+            
+            
+            <!-- This last div is for the row function -->
+        </div>
+    </div> 
+
+
+    </body>
+
+</html>

@@ -1,0 +1,297 @@
+/* Color Pallet - Indeed Blue */
+:root {
+  --primary-color: rgb(11, 78, 179);
+}
+
+/* Fonts */
+body {
+  font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; 
+
+}
+
+/* Form Box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Form Box - Center*/
+center{
+  margin: auto;
+  max-width: min-content;
+  display: inline-block;
+}
+
+/* Spacing Top(nav bar and content)-Bottom (content and page bottom) */
+.space{
+  min-height:5rem;
+}
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #113C95;
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Indeed Logo Nav Format */ 
+.indeedlogo {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 0.0rem;
+  float: left;
+  max-width: 100px;
+  max-height: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #113C95;
+  color: white;
+}
+
+/* Global Stylings - Text */
+p{
+  text-align:center;
+  text-emphasis-style: bold;
+  margin-bottom: 10px;
+}
+.section-header{
+  font-weight:bold;
+}
+.section-footer{
+  margin-bottom: 30px;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Form Box Layout */
+input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+.width-50 {
+  width: 50%;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+
+
+/* Progressbar Properties - Sets up dots + Line */
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 2rem 0 4rem;
+}
+
+/* Progressbar Properties - Sets up dots + Line */
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+
+/* Progressbar Anamation Set Up */
+.progress {
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: 0.3s;
+}
+
+/* Progressbar Anamation Set Up */
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Progressbar Anamation Start */
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+/* Progressbar Anamations After */
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Progressbar Anamations End*/
+.progress-step-active {
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+}
+
+/* Form Properties */
+.form {
+  width: clamp(500px, 30%, 430px);
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+}
+
+/* Form Anamations Format */
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+  margin: 0rem;
+}
+
+/* Form Anamations Transition */
+.form-step-active {
+  display: block;
+}
+
+/* Form Anamations Groups Magins */
+.input-group {
+  margin: 2rem 0;
+}
+
+/* General Form Anamations */
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/* Job Description */
+
+.description {
+  max-width: 500px;
+  margin-left: 5rem;
+}
+
+
+/* Button General Properties */
+.btn {
+  padding: 0.75rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button Layout */
+.btns-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Button Hover */
+.btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+/* Next Button*/
+.btn-next{
+  background-color: var(--primary-color);
+  color:#f3f3f3;
+  
+}
+
+/* Cancel Button*/
+.btn-cancel{
+  background-color: #FFF;
+  color:#113C95;
+}
+
+/* this is css imported to create the two separate columns w/ image and wizard */
+.d-grid {
+  display: grid !important;
+  margin: auto;
+  gap: 5rem !important;
+  float: right;
+}
+/* this is css imported to create the two separate columns w/ image and wizard */
+.gap-3 {
+  gap: 5rem !important;
+}
+
+/* Resume/Cover letter properties */
+.center-review-img{
+  display: block;
+  padding: 1rem;
+  width: 28.5rem;
+}
+
+/* Upload Resume Image */
+.uploadresume{
+  max-width: 25rem;
+  margin-left: 1.2rem;
+  cursor: pointer;
+
+}
+
+/* Create Resume Image */
+.createresume{
+  max-width: 27rem;
+  cursor: pointer;
+}
+
+/* Upload Cover letter Image */
+.uploadcoverletter{
+  max-width: 27rem;
+  cursor: pointer;
+}
+
+/* Create Cover letter Image */
+.createcoverletter{
+  max-width: 27rem;
+  cursor: pointer;
+}
+
